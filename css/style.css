@@ -179,10 +179,10 @@ body {
 }
 
 /* portfolio */
-.nav-portfolio.list {
+.nav-portfolio > .list {
   list-style: none;
 }
-.nav-portfolio.list > .btn {
+.nav-portfolio > .list > .btn {
   color: var(--primary-batton-color);
   font-style: inherit;
   font-weight: 500;
@@ -193,10 +193,11 @@ body {
   line-height: 1.5;
   background-color: #f4f4fd;
 }
-.nav-portfolio.list > .btn:hover:focus {
+.nav-portfolio > .list > .btn:hover:focus {
   color: var(--secondary-text-color);
   background-color: #404bbf;
 }
+
 /* article */
 .article > .list {
   list-style: none;
