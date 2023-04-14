@@ -95,7 +95,7 @@ ul {
 .adventage.list {
   list-style: none;
 }
-.adventage .list.subject {
+.subject {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -235,8 +235,8 @@ ul {
   color: var(--secondary-text-color);
   background-color: #404bbf;
 }
-.artile-list {
-  text-decoration: none;
+.article-list {
+  list-style: none;
 }
 .article-item-link {
   text-decoration: none;
