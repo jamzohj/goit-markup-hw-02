@@ -1,256 +1,191 @@
+/**
+  |============================
+  | Basic styles
+  |============================
+*/
 :root {
-  --primary-text-color: #2e2f42;
-  --secondary-text-color: #ffffff;
-  --accent-text-color: #434455;
-  --secondary-link-color: #404bbf;
-  --primary-span-color: #4d5ae5;
-  --accent-footer-color: #f4f4fd;
-  --primary-batton-color: #4d5ae5;
-  --secondary-batton-color: #ffffff;
+  --primary-text-color: #434455;
+  --secondary-text-color: #2e2f42;
+  --third-text-color: #ffffff;
+  --footer-text-color: #e7e9fc;
+  --accent-text-color: #f4f4fd;
+  --logo-text-color: #4d5ae5;
+  --primary-background: #ffffff;
+  --secondary-background: #f4f4fd;
+  --footer-background: #2e2f42;
+  --button-active: #404bbf;
 }
 
-/* body */
 body {
-  color: var(--accent-text-color);
-  font-family: "Roboto", sans-serif;
-  background: #ffffff;
-}
-ul {
-  list-style: none;
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--primary-background);
 }
 
-/* header */
+.list {
+  list-style-type: none;
+}
 
-/* logo */
-.header-logo-link {
+.link {
   text-decoration: none;
 }
-.header-logo-link {
-  font-family: "Raleway", sans-serif;
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/**
+  |============================
+  | Header Styles
+  |============================
+*/
+.logo {
+  color: var(--logo-text-color);
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   font-size: 18px;
   line-height: 1.17;
-  color: var(--primary-batton-color);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
-.header-span {
-  color: var(--primary-text-color);
+
+.logo-header {
+  color: var(--secondary-text-color);
 }
-/* navi */
-.header-nav-list {
-  list-style: none;
-}
-.header-nav-item {
-  text-decoration: none;
-}
-.header-nav-link {
-  text-decoration: none;
+
+.nav-link {
+  color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: #404bbf;
+}
+.address {
+  font-style: normal;
+}
+.address-link {
   color: var(--primary-text-color);
-}
-.header-nav-link:hover,
-:focus {
-  color: var(--secondary-link-color);
-}
-/* address */
-.header-address {
-  font-style: normal;
-}
-.header-address-list {
-  list-style: none;
-}
-.header-list-item {
-  list-style: none;
-}
-.header-address-link {
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--accent-text-color);
-}
-.header-address-link:hover,
-:focus {
-  color: var(--secondary-link-color);
 }
 
-/* hero */
-.hero {
-  background: #2e2f42;
+.address-link:hover,
+.address-link:focus {
+  color: var(--button-active);
 }
-.hero > .hero-title {
-  text-align: center;
-  letter-spacing: 0.02em;
+
+/**
+  |================================
+  | Hero Styles
+  |================================
+*/
+.hero {
+  background-color: var(--footer-background);
+}
+
+.hero-title {
+  color: var(--third-text-color);
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+/**
+  |================================
+  | Button Styles
+  |================================
+*/
+.button {
+  font-family: 'Roboto', sans-serif;
+  color: var(--third-text-color);
+  background-color: var(--logo-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.button-portfolio {
+  font-family: 'Roboto', sans-serif;
+  color: var(--logo-text-color);
+  background-color: var(--secondary-background);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus,
+.button-portfolio:hover,
+.button-portfolio:focus {
+  color: var(--third-text-color);
+  background-color: var(--button-active);
+}
+
+.text-title {
   color: var(--secondary-text-color);
-}
-/* adventage */
-.adventage.list {
-  list-style: none;
-}
-.subject {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+}
+
+.text {
   color: var(--primary-text-color);
-}
-.prg {
   font-size: 16px;
-  letter-spacing: 0.02em;
   line-height: 1.5;
-  color: var(--accent-text-color);
+  letter-spacing: 0.02em;
 }
-/* example */
+
 .title {
-  font-weight: 700;
-  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
   font-size: 36px;
-  text-align: center;
-  text-transform: capitalize;
   line-height: 1.11;
-  color: var(--primary-text-color);
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
-.example.list {
-  list-style: none;
-}
-/* team */
+
 .team {
-  background: #f4f4fd;
-}
-.team > .title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--primary-text-color);
-}
-.team.list {
-  list-style: none;
-}
-.team.list.item {
-  background-color: #ffffff;
-}
-.team > .section-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--primary-text-color);
-}
-.team > .prg {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--accent-text-color);
-}
-/* button */
-.hero > .button {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  cursor: pointer;
-  font-style: inherit;
-  font-size: 16px;
-  line-height: 1.5;
-  background-color: var(--primary-span-color);
-  color: var(--secondary-text-color);
-}
-.hero > .button:hover:focus {
-  background: #404bbf;
+  background-color: var(--secondary-background);
 }
 
-/* footer */
+.card {
+  background-color: var(--primary-background);
+}
+
+/**
+  |================================
+  | Footer Styles
+  |================================
+*/
+
 .footer {
-  background: #2e2f42;
-}
-.footer > .prg {
-  font-size: 16px;
-  line-height: 2.4;
-  color: var(--accent-footer-color);
-}
-.footer-logo-link {
-  text-decoration: none;
-}
-.footer-logo-link {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--primary-batton-color);
+  background-color: var(--footer-background);
 }
 
-.footer-span {
-  color: var(--accent-footer-color);
-}
-/* -------------------- */
-/*  --------------------*/
-/* portfolio */
-.nav-portfolio > .list {
-  list-style: none;
-}
-.nav-portfolio > .list > .btn {
-  color: var(--primary-batton-color);
-  font-style: inherit;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  cursor: pointer;
-  line-height: 1.5;
-  background-color: #f4f4fd;
-}
-.nav-portfolio > .list > .btn:hover:focus {
-  color: var(--secondary-text-color);
-  background-color: #404bbf;
+.logo-footer {
+  color: #f4f4fd;
 }
 
-/* article */
-.article-button-list {
-  list-style: none;
-}
-.btn {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: var(--primary-batton-color);
-  background-color: var(--accent-footer-color);
-  cursor: pointer;
-}
-.btn:hover,
-:focus {
-  color: var(--secondary-text-color);
-  background-color: #404bbf;
-}
-.article-list {
-  list-style: none;
-}
-.article-item-link {
-  text-decoration: none;
-}
-.article-item-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--primary-text-color);
-}
-.article-item-prg {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--accent-text-color);
+.footer .text {
+  color: var(--footer-text-color);
 }
