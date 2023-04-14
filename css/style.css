@@ -15,27 +15,36 @@ body {
   font-family: "Roboto", sans-serif;
   background: #ffffff;
 }
+ul {
+  list-style: none;
+}
 
 /* header */
-.logo {
+
+/* logo */
+.header-logo-link {
+  text-decoration: none;
+}
+.header-logo-link {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   font-size: 18px;
-  text-decoration: none;
   line-height: 1.17;
   color: var(--primary-batton-color);
 }
-
-.logo > .span {
+.header-span {
   color: var(--primary-text-color);
 }
-/* nav */
-.list {
+/* navi */
+.header-nav-list {
   list-style: none;
 }
-.list.item.link {
+.header-nav-item {
+  text-decoration: none;
+}
+.header-nav-link {
   text-decoration: none;
   font-weight: 500;
   font-size: 16px;
@@ -43,18 +52,21 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
-.list.item.link:hover:focus {
-  text-decoration: none;
+.header-nav-link:hover,
+:focus {
   color: var(--secondary-link-color);
 }
 /* address */
-.address {
+.header-address {
   font-style: normal;
 }
-.address.list {
+.header-address-list {
   list-style: none;
 }
-.address.list.item {
+.header-list-item {
+  list-style: none;
+}
+.header-address-link {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -62,9 +74,11 @@ body {
   letter-spacing: 0.02em;
   color: var(--accent-text-color);
 }
-.site-address.list.link:hover:focus {
+.header-address-link:hover,
+:focus {
   color: var(--secondary-link-color);
 }
+
 /* hero */
 .hero {
   background: #2e2f42;
@@ -164,7 +178,10 @@ body {
   line-height: 2.4;
   color: var(--accent-footer-color);
 }
-.footer > .logo {
+.footer-logo-link {
+  text-decoration: none;
+}
+.footer-logo-link {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -174,10 +191,11 @@ body {
   color: var(--primary-batton-color);
 }
 
-.footer > .logo > .span {
+.footer-span {
   color: var(--accent-footer-color);
 }
-
+/* -------------------- */
+/*  --------------------*/
 /* portfolio */
 .nav-portfolio > .list {
   list-style: none;
@@ -199,23 +217,40 @@ body {
 }
 
 /* article */
-.article > .list {
+.article-button-list {
   list-style: none;
 }
-.address > .list > .link {
+.btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--primary-batton-color);
+  background-color: var(--accent-footer-color);
+  cursor: pointer;
+}
+.btn:hover,
+:focus {
+  color: var(--secondary-text-color);
+  background-color: #404bbf;
+}
+.artile-list {
   text-decoration: none;
 }
-.article > .list > .title {
+.article-item-link {
+  text-decoration: none;
+}
+.article-item-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
-.article > .list > .prg {
+.article-item-prg {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-
   color: var(--accent-text-color);
 }
