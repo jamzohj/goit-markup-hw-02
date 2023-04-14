@@ -12,7 +12,7 @@
 /* body */
 body {
   color: var(--primary-text-color);
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   background: #ffffff;
 }
 
